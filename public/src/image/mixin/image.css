@@ -1,0 +1,46 @@
+.clock {
+    background-image: url("../sprite/icons/clock.svg");
+}
+.email {
+    background-image: url("../sprite/icons/email.svg");
+}
+.facebook {
+    background-image: url("../sprite/icons/facebook.svg");
+}
+.facebook-black {
+    background-image: url("../sprite/icons/facebook-black.svg");
+}
+.instagram {
+    background-image: url("../sprite/icons/inst.svg");
+}
+.phone {
+    background-image: url("../sprite/icons/phone.svg");
+}
+.place-blue {
+    background-image: url("../sprite/icons/place-blue.svg");
+}
+.place-blue-big {
+    background-image: url("../sprite/icons/place-blue-big.svg");
+}
+.place {
+    background-image: url("../sprite/icons/place.svg");
+}
+.watsup {
+    background-image: url("../sprite/icons/watsup.svg");
+}
+.lines {
+    background-image: url("../sprite/icons/lines.svg");
+}
+.phone-blue {
+    background-image: url("../sprite/icons/phone-blue.svg");
+}
+
+.logo {
+    background-image: url("../sprite/logo.svg");
+}
+.work-place {
+    background-image: url("../sprite/work-place.png");
+}
+.map {
+    background-image: url("../sprite/map.png");
+}

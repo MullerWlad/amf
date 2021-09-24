@@ -1,0 +1,132 @@
+<!DOCTYPE html >
+<html lang="ru">
+  <head> 
+    <meta charset="utf-8"/>
+    <title>Amalfi</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope"/>
+    <link rel="stylesheet" href="./src/image/mixin/image.css"/>
+    <link rel="stylesheet" href="./src/resource/mixin/font.css"/>
+    <link rel="stylesheet" href="./src/css/fixed.min.css"/>
+    <link rel="stylesheet" href="./src/css/special.min.css"/>
+    <link rel="stylesheet" href="./src/css/general.min.css"/>
+  </head>
+  <body>
+    <div class="topbar display-horison space-center display-centring">
+      <div class="img-block logo"></div>
+      <div class="menu display-vertical"> 
+        <div class="height-50 underliner display-horison display-centring">
+          <div class="boxused-block special-padding-margin-0"> 
+            <div class="img-block clock"></div>
+            <p class="default-size-14 montserrat">Ежедневно с 10 до 22</p>
+          </div>
+          <div class="boxused-block left-35 special-padding-margin-0"> 
+            <div class="img-block place"></div>
+            <p class="default-size-14 montserrat">Белорусская, Александра Невского, 19–25</p>
+          </div>
+          <p class="default-size-18 montserrat left-63">+7 (495) 132-00-03</p>
+          <u class="left-41"><a class="default-size-15 montserrat font-weight-600">Записаться онлайн</a></u>
+        </div>
+        <nav class="height-50 display-horison space-between display-centring"><a class="default-size-15 montserrat menu-item">Услуги</a><a class="default-size-15 montserrat menu-item">Дизайны</a><a class="default-size-15 montserrat menu-item">Прайс</a><a class="default-size-15 montserrat menu-item">О студии</a><a class="default-size-15 montserrat menu-item">Отзывы</a><a class="default-size-15 montserrat menu-item">Статьи</a><a class="default-size-15 montserrat menu-item">Акции </a><a class="default-size-15 montserrat menu-item">Контакты</a></nav>
+      </div>
+    </div>
+    <div class="width-100 absolute mapper">
+      <div class="img-block map centred">
+        <div class="img-block place-blue-big"></div>
+        <div class="adress-box display-vertical display-centring space-center">
+          <div class="boxused-block"> 
+            <div class="img-block place-blue"></div>
+            <p class="default-size-16 manrope">Белорусская, Александра Невского, 19–25</p>
+          </div>
+          <input placeholder="Введите адрес откуда вы поедете"/>
+        </div>
+      </div>
+    </div>
+    <div class="content-block display-vertical centred" id="content-block">
+      <div class="img-block work-place centred"></div>
+      <div class="display-vertical left-content-prop">
+        <fieldset class="special-margin-top-20">
+          <legend class="default-size-12 manrope black-color font-weight-600" v-if="empty1000" v-on:click="setEmpty()">Главная &nbsp / &nbsp Контакты</legend>
+          <p class="default-size-30 igra pads-null">Контакты</p>
+        </fieldset>
+        <fieldset class="special-margin-top-20"> 
+          <legend class="default-size-14 manrope">Адрес и режим работы:</legend>
+          <div class="boxused-block">
+            <div class="img-block clock"></div>
+            <p class="default-size-14 manrope">Ежедневно с 10 до 22</p>
+          </div>
+          <div class="boxused-block special-margin-top-6">
+            <div class="img-block place"></div>
+            <p class="default-size-14 manrope">Белорусская Александра Невского, 19–25</p>
+          </div>
+        </fieldset>
+        <fieldset class="special-margin-top-30"> 
+          <legend class="default-size-14 manrope">Связь:</legend>
+          <div class="boxused-block special-margin-top-6">
+            <div class="img-block phone"></div>
+            <p class="default-size-16 manrope">+7 (495) 132-00-03</p>
+          </div>
+          <div class="boxused-block special-margin-top-6">
+            <div class="img-block watsup"></div>
+            <p class="default-size-16 manrope">+7 (968) 509-22-00</p>
+          </div>
+          <div class="boxused-block special-margin-top-6">
+            <div class="img-block email"></div>
+            <p class="default-size-16 manrope">Amalfibeauty.ru@yandex.ru</p>
+          </div>
+        </fieldset>
+        <fieldset class="special-margin-top-25"> 
+          <legend class="default-size-14 manrope">Соцсети:</legend>
+          <div class="boxused-block special-margin-top-6">
+            <div class="img-block instagram"></div>
+            <p class="default-size-14 manrope">INSTAGRAM</p>
+          </div>
+          <div class="boxused-block special-margin-top-6">
+            <div class="img-block facebook"></div>
+            <p class="default-size-14 manrope">FACEBOOK</p>
+          </div>
+        </fieldset>
+        <fieldset class="special-margin-top-40">
+          <p class="default-size-30 igra pads-null">Мы на карте</p>
+        </fieldset>
+      </div>
+    </div>
+    <div class="foot display-vertical">
+      <div class="display-horison display-centring space-between">
+        <div class="img-block logo"></div>
+        <div class="boxused-block left-35">
+          <div class="img-block place"></div>
+          <p class="default-size-14 montserrat">Белорусская, Александра Невского, 19–25</p>
+        </div>
+        <div class="boxused-block"> 
+          <div class="img-block clock"></div>
+          <p class="default-size-14 montserrat">Ежедневно с 10 до 22</p>
+        </div>
+        <p class="default-size-30 montserrat">+7 (495) 132-00-03</p>
+      </div>
+      <div class="display-horison space-between special-margin-top--40">
+        <div class="display-vertical"><a class="default-size-15 montserrat menu-item">Маникюр</a><a class="default-size-15 montserrat menu-item">Педикюр</a><a class="default-size-15 montserrat menu-item">Покрытие</a><a class="default-size-15 montserrat menu-item">Наращивание</a></div>
+        <div class="display-vertical"><a class="default-size-15 montserrat menu-item">Услуги</a><a class="default-size-15 montserrat menu-item">Дизайны</a><a class="default-size-15 montserrat menu-item">Прайс</a><a class="default-size-15 montserrat menu-item">О студии</a></div>
+        <div class="display-vertical"><a class="default-size-15 montserrat menu-item">Отзывы</a><a class="default-size-15 montserrat menu-item">Статьи</a><a class="default-size-15 montserrat menu-item">Акции</a><a class="default-size-15 montserrat menu-item">Контакты</a></div>
+        <div class="display-vertical">
+          <p class="default-size-16 montserrat menu-item">amalfibeauty.ru@yandex.ru</p>
+          <div class="boxused-block"> 
+            <div class="img-block instagram"></div>
+            <p class="default-size-14 manrope">INSTAGRAM</p>
+          </div>
+          <div class="boxused-block"> 
+            <div class="img-block facebook"></div>
+            <p class="default-size-14 manrope">FACEBOOK</p>
+          </div>
+          <div class="boxused-block"> 
+            <div class="img-block watsup"></div>
+            <p class="default-size-16 manrope">WHATSUP</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script type="module" src="./src/js/usual/general.js"></script>
+  <script src="./src/js/vue/general.js"></script>
+</html>
