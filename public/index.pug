@@ -1,0 +1,19 @@
+doctype html 
+html(lang="ru")
+    head 
+        meta(charset="utf-8")
+        title Amalfi
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope")
+        link(rel="stylesheet" href="./src/image/mixin/image.css")
+        link(rel="stylesheet" href="./src/resource/mixin/font.css")
+        link(rel="stylesheet" href="./src/css/fixed.min.css")
+        link(rel="stylesheet" href="./src/css/special.min.css")
+        link(rel="stylesheet" href="./src/css/general.min.css")
+    body
+        include ./src/pug/components/header
+        include ./src/pug/components/content
+        include ./src/pug/components/footer
+    script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+    script(type="module" src="./src/js/usual/general.js")
+    script(src="./src/js/vue/general.js")
