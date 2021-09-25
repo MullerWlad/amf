@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Igra;
+    src: url("../font/IgraSans.otf");
+}
+
+.igra {
+    font-family: Igra;
+}
+.manrope {
+    font-family: Manrope;
+}
+.montserrat {
+    font-family: Montserrat;
+}

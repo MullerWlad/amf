@@ -1,0 +1,82 @@
+<!DOCTYPE html >
+<html lang="ru">
+  <head> 
+    <meta charset="utf-8"/>
+    <title>Amalfi</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope"/>
+    <link rel="stylesheet" href="./src/image/mixin/image.css"/>
+    <link rel="stylesheet" href="./src/resource/mixin/font.css"/>
+    <link rel="stylesheet" href="./src/css/fixed.min.css"/>
+    <link rel="stylesheet" href="./src/css/special.min.css"/>
+    <link rel="stylesheet" href="./src/css/general.min.css"/>
+  </head>
+  <body>
+    <!--include ./src/pug/components/header-->
+    <div class="width-100 absolute mapper">
+      <div class="img-block map centred">
+        <div class="img-block place-blue-big"></div>
+        <div class="adress-box display-vertical display-centring space-center">
+          <div class="boxused-block"> 
+            <div class="img-block place-blue"></div>
+            <p class="default-size-16 manrope">Белорусская, Александра Невского, 19–25</p>
+          </div>
+          <input placeholder="Введите адрес откуда вы поедете"/>
+        </div>
+      </div>
+    </div>
+    <div class="content-block display-vertical centred" id="content-block">
+      <div class="img-block work-place"></div>
+      <div class="display-vertical left-content-prop">
+        <fieldset>
+          <legend class="default-size-12 manrope black-color font-weight-600" v-if="empty">Главная &nbsp / &nbsp Контакты</legend>
+          <p class="default-size-30 igra pads-null">Контакты</p>
+        </fieldset>
+        <fieldset class="special-margin-top-20"> 
+          <legend class="default-size-14 manrope">Адрес и режим работы:</legend>
+          <div class="boxused-block">
+            <div class="img-block clock"></div>
+            <p class="default-size-14 manrope">Ежедневно с 10 до 22</p>
+          </div>
+          <div class="boxused-block special-margin-top-6">
+            <div class="img-block place"></div>
+            <p class="default-size-14 manrope">Белорусская Александра Невского, 19–25</p>
+          </div>
+        </fieldset>
+        <fieldset class="special-margin-top-30"> 
+          <legend class="default-size-14 manrope">Связь:</legend>
+          <div class="boxused-block special-margin-top-6">
+            <div class="img-block phone"></div>
+            <p class="default-size-16 manrope">+7 (495) 132-00-03</p>
+          </div>
+          <div class="boxused-block special-margin-top-6">
+            <div class="img-block watsup"></div>
+            <p class="default-size-16 manrope">+7 (968) 509-22-00</p>
+          </div>
+          <div class="boxused-block special-margin-top-6">
+            <div class="img-block email"></div>
+            <p class="default-size-16 manrope">Amalfibeauty.ru@yandex.ru</p>
+          </div>
+        </fieldset>
+        <fieldset class="special-margin-top-25"> 
+          <legend class="default-size-14 manrope">Соцсети:</legend>
+          <div class="boxused-block special-margin-top-6">
+            <div class="img-block instagram"></div>
+            <p class="default-size-14 manrope">INSTAGRAM</p>
+          </div>
+          <div class="boxused-block special-margin-top-6">
+            <div class="img-block facebook"></div>
+            <p class="default-size-14 manrope">FACEBOOK</p>
+          </div>
+        </fieldset>
+        <fieldset class="special-margin-top-40">
+          <p class="default-size-30 igra pads-null">Мы на карте</p>
+        </fieldset>
+      </div>
+    </div>
+    <!--include ./src/pug/components/footer-->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script type="module" src="./src/js/usual/general.js"></script>
+  <script src="./src/js/vue/general.js"></script>
+</html>
